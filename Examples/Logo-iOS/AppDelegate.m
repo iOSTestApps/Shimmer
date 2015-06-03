@@ -8,12 +8,25 @@
  */
 
 #import "AppDelegate.h"
+#import <BuddyBuildSDK/BuddyBuildSDK.h>
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [BuddyBuildSDK setup:self];
+  
   return YES;
+}
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+  if ([BuddyBuildSDK handleOpenURL:url]) {
+    return YES;
+  }
+  return NO;
 }
 
 @end
