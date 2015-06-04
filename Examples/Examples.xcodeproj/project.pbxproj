@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C2000B3E54545778131125E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC0AFE397079BA942F4B3A0 /* CoreText.framework */; };
+		DD9ECEF5A4981F5D82558495 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5885A3464C9A30AF91317EB8 /* AssetsLibrary.framework */; };
 		EC45CACE18ADC7CE0063DD11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC45CACD18ADC7CE0063DD11 /* Foundation.framework */; };
 		EC45CAD018ADC7CE0063DD11 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC45CACF18ADC7CE0063DD11 /* CoreGraphics.framework */; };
 		EC45CAD218ADC7CE0063DD11 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC45CAD118ADC7CE0063DD11 /* UIKit.framework */; };
@@ -18,9 +20,13 @@
 		EC45CAE718ADC7CE0063DD11 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC45CAE618ADC7CE0063DD11 /* ViewController.m */; };
 		EC45CAE918ADC7CE0063DD11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC45CAE818ADC7CE0063DD11 /* Images.xcassets */; };
 		EC45CB0418ADC7E80063DD11 /* libFBShimmering.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC45CB0318ADC7E80063DD11 /* libFBShimmering.a */; };
+		F253F0EB6626CD9A55D24AD5 /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04226AEBC9AAE2E92FD3CCCC /* BuddyBuildSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04226AEBC9AAE2E92FD3CCCC /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		5885A3464C9A30AF91317EB8 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		EAC0AFE397079BA942F4B3A0 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		EC45CACA18ADC7CE0063DD11 /* Logo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Logo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC45CACD18ADC7CE0063DD11 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EC45CACF18ADC7CE0063DD11 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +59,9 @@
 				EC45CAD018ADC7CE0063DD11 /* CoreGraphics.framework in Frameworks */,
 				EC45CAD218ADC7CE0063DD11 /* UIKit.framework in Frameworks */,
 				EC45CACE18ADC7CE0063DD11 /* Foundation.framework in Frameworks */,
+				F253F0EB6626CD9A55D24AD5 /* BuddyBuildSDK.framework in Frameworks */,
+				DD9ECEF5A4981F5D82558495 /* AssetsLibrary.framework in Frameworks */,
+				0C2000B3E54545778131125E /* CoreText.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +95,9 @@
 				EC45CAEF18ADC7CE0063DD11 /* XCTest.framework */,
 				EC45CB0A18ADC8570063DD11 /* Cocoa.framework */,
 				EC45CB0C18ADC8570063DD11 /* Other Frameworks */,
+				04226AEBC9AAE2E92FD3CCCC /* BuddyBuildSDK.framework */,
+				5885A3464C9A30AF91317EB8 /* AssetsLibrary.framework */,
+				EAC0AFE397079BA942F4B3A0 /* CoreText.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -277,6 +289,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -334,6 +347,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
